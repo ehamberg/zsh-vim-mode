@@ -1,4 +1,4 @@
-# enable Vi mode
+# enable Vim mode
 bindkey -v
 
 # key bindings
@@ -16,6 +16,16 @@ bindkey "^[[A" up-line-or-history
 bindkey "^[[B" down-line-or-history
 bindkey "^[[C" vi-forward-char
 bindkey "^[[D" vi-backward-char
+
+# Surround commands
+autoload -Uz surround
+zle -N delete-surround surround
+zle -N add-surround surround
+zle -N change-surround surround
+bindkey -a cs change-surround
+bindkey -a ds delete-surround
+bindkey -a ys add-surround
+bindkey -M visual S add-surround
 
 # allow editing of command line
 autoload -U edit-command-line
