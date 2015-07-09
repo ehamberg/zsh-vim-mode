@@ -1,5 +1,7 @@
-zsh-vi-mode
+zsh-vim-mode
 ===========
 
-Friendly Vi mode for zsh that also supports some of the most common emacs key
+Friendly Vim mode for zsh that also supports some of the most common emacs key
 bindings (e.g. beginning/end of line).
+
+Requires zsh ≥ 5.0.8.
